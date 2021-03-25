@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Models</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <img src="assets/menu.png" alt="menu" class="menu-icon" onclick="toggleMenu()">
+        </div>
+
+        
+        <div class="row">
+            <div class="col-1">
+                <h2>Bicycle Trendy <br> Superrr </h2>
+                <h3>Models</h3>
+                <p>Generic</p>
+                <h4>$50</h4>
+                <button>Buy Now <img src="assets/arrow.png" alt="buy"></button>
+            </div>
+            <div class="col-2">
+                <img src="assets/bicycle.png" alt="header" class="header">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="assets/add.png" alt="add">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            
+            <img src="assets/fb.png" alt="fb">
+            <img src="assets/tw.png" alt="tw">
+            <img src="assets/ig.png" alt="ig">
+        </div>
+
+    </div>
+
+    <script>
+        let menuList = document.getElementById('menuList');
+
+        menuList.style.maxHeight = '0px';
+
+        function toggleMenu(){
+            if (menuList.style.maxHeight == '0px') {
+                menuList.style.maxHeight = '130px'
+            }else{
+                menuList.style.maxHeight = '0px'
+            }
+        }
+    </script>
+
+</body>
+</html>
